@@ -1,0 +1,82 @@
+/* App.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /* background-color: #cfe1f2;  */
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2, p {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative; /* Set position to relative for containing the logo */
+}
+
+.logo {
+  width: 150px; /* Adjust the size of the logo */
+  height: auto;
+  position: absolute; /* Position the logo */
+  top: 5%; /* Adjust the distance from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for center alignment */
+}
+
+.login-container {
+  width: 100%;
+  max-width: 350px; /* Set the maximum width of the login form */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px; /* Adjust the top margin to create space between the logo and form */
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #357dbf;
+}
